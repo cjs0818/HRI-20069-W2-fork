@@ -1,7 +1,7 @@
 # This is a Dockerfile for ros:ros-tutorials
-FROM ros:kinetic-ros-base
+FROM ros:indigo-ros-base
 
-ENV ROS_DISTRO kinetic
+ENV ROS_DISTRO indigo
 
 # install ros tutorials packages
 RUN apt-get update && apt-get install -y \
