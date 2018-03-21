@@ -19,13 +19,3 @@ services:
 #      - "ROS_HOSTNAME=talker"
 #      - "ROS_MASTER_URI=http://master:11311"
     command: rosrun roscpp_tutorials talker
-
-  listener:
-    network_mode: host
-    build: ./listener
-    container_name: listener
-#    image: hri/ros:indigo-ros-tutorials
-#    environment:
-#      - "ROS_HOSTNAME=talker"
-#      - "ROS_MASTER_URI=http://master:11311"
-    command: rosrun roscpp_tutorials listener
